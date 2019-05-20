@@ -1,0 +1,43 @@
+{
+  "name": "npm-ts-pug",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index",
+  "license": "ISC",
+  "scripts": {
+    "build:image": "bin/build_image.sh",
+    "build:pug": "bin/build_pug.sh",
+    "build:scss": "bin/build_scss.sh",
+    "build:ts": "bin/build_ts.sh",
+    "build": "bin/build.sh",
+    "clean": "bin/clean.sh",
+    "watch:image": "chokidar src/img/* -c 'npm run build:image'",
+    "watch:pug": "chokidar src/pug/* -c 'npm run build:pug'",
+    "watch:scss": "chokidar src/scss/* -c 'npm run build:scss'",
+    "watch:ts": "chokidar src/ts/* -c 'npm run build:ts'",
+    "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8080 ",
+    "watch": "bin/build.sh && npm-run-all -p watch:*",
+    "dev": "bin/build.sh && npm-run-all -p watch:*",
+    "start": "bin/build.sh && npm-run-all -p watch:*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.18.13",
+    "chokidar-cli": "^1.2.0",
+    "concat": "^1.0.3",
+    "css-mqpacker": "^7.0.0",
+    "imagemin-cli": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylelint": "^9.0.0",
+    "stylelint-config-standard": "^18.1.0",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.1.6",
+    "uglifyjs": "^2.4.11",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
