@@ -1,5 +1,5 @@
 // sample
-import sampleA from "./_sample_a";
+import sampleA from './_sample_a';
 export default function () {
-  sampleA("hoge");
+  sampleA('hoge');
 }
