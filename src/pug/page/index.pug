@@ -7,7 +7,28 @@ block page_data
   - var siteUrl = ""
 
 block body
-  h1 body
+  h1 h1
+
+  include ../include/component/breadcrumb
+  h1 h1
+  main
+    article
+      section
+        h2 h2
+        figure
+          figcaption figcaption
+          img(src='', alt='')
+        details
+          summary summary
+        p
+          mark mark
+          time time
+        ul
+          li
+        ol
+          li
+  aside aside
+
   ul
     for data in page_data
       li
