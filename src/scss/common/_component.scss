@@ -16,4 +16,16 @@
 // c-text
 .c-text {
   margin-bottom: $WIDTH_CELL * 2;
+  line-height: $LINE_HEIGHT_L;
+}
+
+// c-img
+.c-img {
+  margin-bottom: $WIDTH_CELL * 2;
+  text-align: center;
+
+  > img {
+    width: 100%;
+    max-width: $WIDTH_SP_MAX;
+  }
 }
