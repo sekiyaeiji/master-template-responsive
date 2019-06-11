@@ -1,3 +1,19 @@
 @charset "utf-8";
 
 // common
+
+body {
+  min-width: $WIDTH_SP_MIN;
+  font-size: $FONT_SIZE_M;
+  line-height: $LINE_HEIGHT_M;
+  font-family: $FONT_FAMILY;
+  color: $CLR_TXT;
+}
+
+a {
+  color: $CLR_TXT_LINK;
+
+  &:hover {
+    color: $CLR_TXT_HOVER;
+  }
+}

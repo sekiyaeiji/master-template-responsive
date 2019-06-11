@@ -7,14 +7,32 @@ block page_data
   - var siteUrl = ""
 
 block body
-  h1 h1
-
-  include ../include/component/breadcrumb
-  h1 h1
-  main
-    article
-      section
-        h2 h2
+  include ../include/common/breadcrumb
+  p.c-key-visual
+    img(src="https://sekiyaeiji.github.io/image-storage/dist/img/heavy-img/img_0285-gs.jpg", alt="")
+  h1.l-h1 h1テキストh1テキストh1テキスト
+  main.l-main
+    article.l-article
+      section.l-section
+        h2.l-h2 h2テキストh2テキストh2テキストh2テキストh2テキストh2テキスト
+        p.c-text
+          |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          br
+          |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          br
+          |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        h2.l-h2 h2テキストh2テキストh2テキストh2テキストh2テキストh2テキスト
+        p.c-text
+          |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          br
+          |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          br
+          |テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        ul
+          for data in page_data
+            li
+              h2= data.title
+              p= data.text
         figure
           figcaption figcaption
           img(src='', alt='')
@@ -27,10 +45,9 @@ block body
           li
         ol
           li
-  aside aside
-
-  ul
-    for data in page_data
-      li
-        h2= data.title
-        p= data.text
+  aside.l-aside
+    ul
+      for data in page_data
+        li
+          h2= data.title
+          p= data.text

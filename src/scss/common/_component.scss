@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// component
+
+// c-key-visual
+.c-key-visual {
+  margin-bottom: $WIDTH_CELL * 2;
+  text-align: center;
+
+  > img {
+    width: 100%;
+    max-width: $WIDTH_SP_MAX;
+  }
+}
+
+// c-text
+.c-text {
+  margin-bottom: $WIDTH_CELL * 2;
+}

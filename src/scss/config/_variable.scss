@@ -1,9 +1,74 @@
 @charset "utf-8";
 
-// variable
+// variable ------
+// font-family ---
+$FONT_FAMILY: Meiryo, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, Arial, Sans-serif;
+$FONT_FAMILY_ENGLISH: Arial, Sans-serif;
 
-// color
+// font size ---
+$FONT_SIZE_5L: 36px;
+$FONT_SIZE_4L: 24px;
+$FONT_SIZE_3L: 18px;
+$FONT_SIZE_2L: 16px;
+$FONT_SIZE_L: 14px;
+$FONT_SIZE_M: 13px;
+$FONT_SIZE_S: 12px;
+$FONT_SIZE_2S: 11px;
+$FONT_SIZE_3S: 10px;
+$FONT_SIZE_ZERO: 0px;
 
-// font size
+// line-height ---
+$LINE_HEIGHT_2L: 2.4;
+$LINE_HEIGHT_L: 2;
+$LINE_HEIGHT_M: 1.6;
+$LINE_HEIGHT_S: 1.4;
+$LINE_HEIGHT_2S: 1.2;
+$LINE_HEIGHT_NONE: 1;
 
-// mixin
+// border ---
+$BORDER_RADIUS: 4px;
+$INNER_BORDER_RADIUS: 3px;
+
+// background-color ---
+// 背景色：標準
+$CLR_BG: #eee;
+
+// 背景色：反転
+$CLR_BG_REVERSE: #333;
+
+// 背景色：強調
+$CLR_BG_EM: #999;
+
+// color ---
+// 文字色：標準
+$CLR_TXT: #444;
+
+// 文字色：リンク
+$CLR_TXT_LINK: #666;
+$CLR_TXT_HOVER: #888;
+
+// 文字色：反転
+$CLR_TXT_REVERSE: #fff;
+
+// 文字色：注記
+$CLR_TXT_NOTE: #999;
+
+// width ---
+$WIDTH_WRAPPER: 1000px;
+$WIDTH_CONTENT: 980px;
+$WIDTH_BREAKOPINT: 979px;
+$WIDTH_MAIN: 630px;
+$WIDTH_ASIDE: 220px;
+$WIDTH_SP_MAX: 414px;
+$WIDTH_SP_MIN: 320px;
+$WIDTH_CELL: 8px;
+$WIDTH_HALF_CELL: $WIDTH_CELL / 2;
+
+// mixin ---
+// media query
+//    smartphone・tablet portrait ： default / tablet landscape・pc ： mq
+@mixin mq {
+  @media only screen and (min-width: $WIDTH_BREAKOPINT) {
+    @content;
+  }
+}

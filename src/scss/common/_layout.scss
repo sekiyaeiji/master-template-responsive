@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+// layout
+
+// l-header
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  padding: $WIDTH_CELL * 2;
+  background: $CLR_BG_REVERSE;
+
+  .l-logo {
+    font-size: $FONT_SIZE_4L;
+    font-weight: bold;
+    line-height: $LINE_HEIGHT_NONE;
+  }
+
+  .l-utility {
+    font-size: $FONT_SIZE_ZERO;
+
+    .utility__item {
+      display: inline-block;
+      margin-left: $WIDTH_CELL;
+      font-size: $FONT_SIZE_S;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  a {
+    color: #ccc;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
+
+// l-breadcrumb
+.l-breadcrumb {
+  margin-bottom: $WIDTH_CELL;
+  padding: $WIDTH_CELL $WIDTH_CELL 0;
+  font-size: $FONT_SIZE_2S;
+
+  .breadcrumb__item {
+    position: relative;
+    display: inline-block;
+    margin-right: $WIDTH_CELL;
+    padding-right: $WIDTH_CELL;
+    line-height: $LINE_HEIGHT_NONE;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 38%;
+      width: 4px;
+      height: 4px;
+      transform: rotate(45deg);
+      border: 1px solid $CLR_TXT_LINK;
+      border-width: 1px 1px 0 0;
+    }
+  }
+}
+
+// l-main
+.l-main {
+  margin: 0 $WIDTH_CELL $WIDTH_CELL * 3;
+}
+
+// l-h
+.l-h1 {
+  margin: 0 $WIDTH_CELL $WIDTH_CELL * 2;
+  font-size: $FONT_SIZE_4L;
+}
+
+.l-h2 {
+  margin-bottom: $WIDTH_CELL * 1.5;
+  font-size: $FONT_SIZE_3L;
+}
